@@ -39,7 +39,10 @@ console.log(location.hash);  // #bookmark
 ```
 > 문서에 정의해둔 특정구간 위치 식별자
 
-- console.log(location)을 실행하면 위와 같은 location에 대한 부분들을 분석해서 뿌려줌
+- 위와 같은 location에 대한 부분들을 분석해서 뿌리기
+```
+console.log(location)
+```
 
 
 ## URL 변경하기
