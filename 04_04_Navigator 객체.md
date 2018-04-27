@@ -8,6 +8,12 @@ console.dir(navigator);
 ```
 > Navigator의 모든 프로퍼티 열람
 
+
+### 크로스브라우징(cross browsing)
+- Netscape와 IE브라우저 두 회사의 경쟁으로 무질서하게 기능이 추가되어 각기 다른 브라우저에 다른 코드를 작성해야하는 불편함이 생겼다.<br/>W3C(ECMA) 국제표준화기구가 `웹표준`을 세워 질서를 바로았으나 세밀한 부분은 아직 남아있다.<br/>이러한 현상을 크로스브라우징이라 부르고 각기 다른 브라우저의 호환성을 확인하기 위해 Navigator객체를 사용한다.
+- IE, FireFox, Chrome, Safari, Opera 
+
+
 ## 주요 프로퍼티
 
 ### appName
@@ -83,4 +89,4 @@ if (!Object.keys) {
   }());
 }
 ```
-> 만약 Object.keys이 없다면 위의 코드를 실행해 같은 기능을 구현시켜라
+> 만약 Object.keys이 없다면 위의 코드를 실행해 같은 기능을 구현시켜라 (코드분석은 나중에)
