@@ -29,7 +29,7 @@ console.log(location.port);  // :80
 ```
 console.log(location.pathname);  // module/1
 ```
-> 웹서버의 구체적인, 특정한 정보
+> 웹서버의 구체적인, 특정한 정보 (하위 디렉토리)
 ```
 console.log(location.search);  // ?id=1
 ```
@@ -37,7 +37,8 @@ console.log(location.search);  // ?id=1
 ```
 console.log(location.hash);  // #bookmark
 ```
-> 특정구간 식별자
+> 문서에 정의해둔 특정구간 위치 식별자
+
 - console.log(location)을 실행하면 위와 같은 location에 대한 부분들을 분석해서 뿌려줌
 
 
