@@ -8,7 +8,7 @@
 ## jQuery의 사용
 - jQuery를 사용하기 위해서는 jQuery를 HTML로 로드해야 함
 ```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
 > 다운받아 사용하는 방법과 위와같이 스크립트 태그를 이용하는 방법 두가지가 있다.
 ```
