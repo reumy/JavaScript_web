@@ -27,6 +27,7 @@ HTMLCollection
 ```
 > 즉, 실행결과가 '하나'인 경우 HTMLLIELement, '복수'인 경우 HTMLCollection(유사배열)을 리턴
 
+- `constructor : 객체의 Element 종류 조회`
 
 ## HTMLElement
 - 실행결과가 하나인 엘리먼트
