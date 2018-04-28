@@ -100,4 +100,4 @@ interface HTMLAnchorElement : __HTMLElement__ {
 
 ![DOM Tree](images/jsw02.png)
 
-[!출처](https://web.stanford.edu/class/cs98si/slides/the-document-object-model.html)
+[출처](https://web.stanford.edu/class/cs98si/slides/the-document-object-model.html)
