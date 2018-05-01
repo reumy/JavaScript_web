@@ -8,7 +8,7 @@
 - prepend : 해당 태그 안쪽 내용 위에 위치
 - append : 해당 태그 안쪽 내용 아래에 위치
 <br/>
-![주요 메소드](images/jsw10.png)
+[!주요 메소드](images/jsw10.png)
 <br/>
 > 주요한 메소드 4가지의 관계도
 
