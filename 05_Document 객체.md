@@ -1,6 +1,6 @@
 ## Document 객체
 
-[!Document](images/jsw11.png);
+![Document](images/jsw11.png);
 
 - Document 객체는 DOM의 스팩이고 웹브라우저에서 HTMLDocument 객체로 사용됨
 - HTMLDocument 객체는 문서전체를 대표하는 객체
@@ -33,10 +33,19 @@ console.log(window.document.childNodes[1]);
 - document 객체의 주요임무는 새로운 노드를 생성해주는 역할임
 - createElement()
 - createTextNode()
-
+```
+document.createElement
+```
 
 ### 문서정보 API
 - title
 - URL
 - referrer
 - lastModified
+```
+document.title
+```
+- 결과
+```
+Document 객체 - 생활코딩
+```
