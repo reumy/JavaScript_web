@@ -129,7 +129,7 @@ $('#target').off('focus', handler);
 ```
 > handler기능은 제거되고 alert기능은 정상동작함
 
-- 모두 
+- 모두 제거
 ```
 $('#target').off('focus blur', handler);
 ```
