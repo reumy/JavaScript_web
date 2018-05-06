@@ -224,3 +224,22 @@ for(var i = 0; i < countedWordArr.length; i++){
   console.log(countedWordArr[i][0], countedWordArr[i][1])
 }
 ```
+
+- 콘솔창에 출력2 (console.log를 alert으로)
+```
+countedWordArr.sort(function(a, b){
+  return b[1] - a[1];
+});
+```
+> 빈도수 많은 순 에서 적은 순으로 정렬<br/>빈도수가 많은것을 보려면 alert창은 밑에까지 스크롤을 내려야 하므로 정렬를 바꿔줌
+
+```
+var str = '';
+for(var i = 0; i < countedWordArr.length; i++){
+  str = str + (countedWordArr[i][0] + " : " + countedWordArr[i][1])+"\n";
+}
+alert(str);
+```
+> 경고창은 인자를 하나만 받는다.<br/>출력될 결과를 문자(str)로 만들어놓고 for문이 돌때마다 str에 하나씩 순차적으로 추가한다.<br/>그리고 마지막에 한번만 실행한다.<br/>그렇지 않으면 반복문이 끝날때까지 경고창이 반복된다.
+
+- `\n : 줄바꿈`
