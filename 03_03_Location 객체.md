@@ -3,7 +3,7 @@
 - 윈도우의 문서의 주소(URL)을 알아내거나 변경할 수 있고, 문서의 위치와 관련해서 다양한 정보를 얻을 수 있음
 
 
-### 현재 윈도우 URL 알아내기
+## 현재 윈도우 URL 알아내기
 - 현재 윈도우의 문서가 위치하는 URL을 알아내는 방법
 ```
 console.log(location.toString(), location.href);  // url 출력
@@ -20,7 +20,7 @@ alert(location)  // url을 출력함
 > alert은 인자로 입력한 입력값이 문자열이어야 하기때문에 결과를 문자화시켜서 보여줌
 
 
-### URL Parsing
+## URL Parsing
 - URL의 구간 정보 알아내기
 - location 객체는 URL을 의미에 따라서 별도의 프로퍼티로 제공하고 있음
 
