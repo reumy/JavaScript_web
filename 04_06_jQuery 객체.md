@@ -95,13 +95,11 @@ for(var i=0; i<li.length; i++){
 ```
 > li[i]인 DOM 객체를 jQuery 함수로 감싸서 $(li[i]) jQuery객체를 만들면 jQeury로 제어가 가능하다.
 
-- ※ 추가설명
-> jQuery를 담은 변수는 jQeury가 아닌 DOM이다. 그러나 jQuery Object가 유사배열을 가지고 있을 경우 그 유사배열의 한 객체가 DOM Object인 것이다.<br/>즉, var li = $('li'); 일때, li는 jQuery object이고 li[0], li[1], li[2] ...는 DOM object 인 것이다.<br/>그래서 li[1]에 jQuery 함수(.css , .attr 과 같은 함수)를 쓰고 싶으면 $()로 감싸주어야 jQuery 함수를 사용가능한 것이다.<br/>그러나 li자체를 사용할때는 jQuery객체이므로 '$'로 감싸줄 필요없이 바로 사용가능하다. `ex) li.attr();`
-
-
 - jQuery 객체로 바꾸기
-  - jQuery 함수의 인자로 전달 : $(li[i])
+  - jQuery 함수의 인자로 전달 : $( li[i] )
 ```
+var li = $('li');
+
 for(var i=0; i<li.length; i++){
   console.log(li[i].constructor);
 }
@@ -122,10 +120,12 @@ $('li')
 ```
 > jQuery 객체 리턴
 
+- 해석<br/>jQuery를 담은 변수는 jQeury가 아닌 DOM이다. 그러나 jQuery Object가 유사배열을 가지고 있을 경우 그 유사배열의 한 객체가 DOM Object인 것이다.<br/>즉, var li = $('li'); 일때, li는 jQuery object이고 li[0], li[1], li[2] ...는 DOM object 인 것이다.<br/>그래서 li[1]에 jQuery 함수(.css , .attr 과 같은 함수)를 쓰고 싶으면 $()로 감싸주어야 jQuery 함수를 사용가능한 것이다.<br/>그러나 li자체를 사용할때는 jQuery객체이므로 '$'로 감싸줄 필요없이 바로 사용가능하다. `ex) li.attr();`
+
 
 ## .map()
 - 조회된 결과 열람
-- function(index, elem)
+- .map(function(index, elem){})
   - index : element의 index 전달
   - elem : DOM 객체 전달
 - map은 jQuery 객체의 엘리먼트를 하나씩 순회하면서 첫번째 인자로 전달된 함수가 호출 됨
