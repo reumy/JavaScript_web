@@ -32,9 +32,9 @@
 ```
 <input type="button" id="hw" value="Hello world" />
 
-<script type="text/javascript" src="script01.js"></script>
+<script type="text/javascript" src="script.js"></script>
 ```
-- script01.js
+- script.js
 ```
 var hw = document.getElementById('hw');
 hw.addEventListener('click', function(){
@@ -51,7 +51,7 @@ hw.addEventListener('click', function(){
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="script01.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <input type="button" id="hw" value="Hello world" />
@@ -59,7 +59,7 @@ hw.addEventListener('click', function(){
 </html>
 ```
 > html 보다 js를 먼저 읽어서 id=hw를 인식못하기 때문에 오류가 남 js코드에 window.onload를 이용해 오류해결
-- script01.js
+- script.js
 ```
 window.onload = function(){
   var hw = document.getElementById('hw');
