@@ -69,3 +69,4 @@
 </body>
 </html>
 ```
+> JavaScript로 HTML을 제어해서 CSS를 적용한다.
