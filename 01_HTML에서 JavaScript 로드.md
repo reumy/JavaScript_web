@@ -72,4 +72,4 @@ window.onload = function(){
 ```
 - `window.onload = function(){} : 웹브라우저의 모든 구성요소에 대한 로드가 끝났을 때 브라우저에 의해서 호출되는 함수`
 
-- 이러한 이유와 속도향상의 이유로 script 파일은 head 태그 보다 body태그가 끝나는 하단에 위치시키는 것이 더 좋다. 
+- head에 위치시키면 scrpit를 해석하는동안 html은 해석되지 않는다 즉, 랜더링이 지연된다.<br/>이러한 이유들로 script 파일은 head 태그 보다 body태그가 끝나는 하단에 위치시키는 것이 더 좋다.
