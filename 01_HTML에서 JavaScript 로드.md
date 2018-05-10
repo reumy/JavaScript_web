@@ -47,6 +47,8 @@ hw.addEventListener('click', function(){
 ## script 파일의 위치
 - script를 head 태그에 위치시킬 수도 있음
   - 단점 : 오류의 위험
+  - head 는 웹페이지에 사용되는 리소스들을 로드하거나 설명하는 정보를 위치시킴
+  
 ```
 <!DOCTYPE html>
 <html>
