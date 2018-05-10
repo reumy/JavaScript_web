@@ -56,8 +56,10 @@ console.dir(navigator.userAgent);
 ### platform
 - 브라우저가 동작하고 있는 운영체제에 대한 정보
 ```
-console.dir(navigator.platform);
+console.dir(navigator.platform);  // win32
 ```
+> 윈도우 운영체제
+
 
 ### 기능 테스트
 - 작성한 코드가 브라우저에서 동작될때 사용할 기능이 동작되는지 테스트 하는 방법을 알아보는 것
