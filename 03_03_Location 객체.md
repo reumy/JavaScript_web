@@ -6,9 +6,19 @@
 ### 현재 윈도우 URL 알아내기
 - 현재 윈도우의 문서가 위치하는 URL을 알아내는 방법
 ```
-console.log(location.toString(), location.href);
+console.log(location.toString(), location.href);  // url 출력
 ```
 > location.toString(), location.href 모두 같은값을 리턴하지만, location.href 를 사용하는 것이 더 일반적
+
+```
+console.log(location)
+```
+> 객체가 가진 프로퍼티(location)를 분석해서 보여줌 (객체정보)
+```
+alert(location)  // url을 출력함
+```
+> alert은 인자로 입력한 입력값이 문자열이어야 하기때문에 결과를 문자화시켜서 보여줌
+
 
 ### URL Parsing
 - URL의 구간 정보 알아내기
