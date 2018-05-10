@@ -55,13 +55,13 @@ HTMLCollection
 ```
 - 결과
 ```
-HTML__LI__Element
-HTML__Anchor__Element
-HTML__Input__Element
+HTML'LI'Element
+HTML'Anchor'Element
+HTML'Input'Element
 ```
-> 엘리먼트의 종류에 따라서 리턴되는 객체가 조금씩 다름
+> 각 해당되는 태그를 추상화한 객체의 이름
 
-- 즉, 엘리먼트 객체에 따라서 프로퍼티가 다르다. 하지만 모든 엘리먼트들은 HTMLElement를 상속 받고 있다.
+- 엘리먼트의 종류(태그명)에 따라서 리턴되는 객체가 조금씩 다르다.<br/>그 말은 엘리먼트 객체에 따라서 프로퍼티(기능)가 다르다는 뜻<br/>하지만 모든 엘리먼트들은 공통적으로 HTMLElement를 상속 받고 있다.<br/>즉, 공통적인 프로퍼티를 가지고 있다. 하지만 동시에 태그의 성격과 쓰임에 따라 기능이 다르다.
 
 - DOM의 스펙
   - [HTMLElement](https://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html#ID-74680021)
