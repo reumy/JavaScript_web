@@ -35,5 +35,4 @@
 
 > HTMLCollection은 '실시간'으로 변경되기 때문에 다시 재조회할 필요없다.<br/>조회 : var lis = document.getElementsByTagName('li'); 로 lis에 HTMLCollection객체를 담는 것<br/>재조회 : lis[1].parentNode.removeChild(lis[1]);를 통해 lis[1]가 삭제되고 이 삭제된 상태를 적용하기 위하여<br/>다시 var lis = document.getElementsByTagName('li');를 사용해 lis에 HTMLCollection객체를 담는 것<br/>즉, 제거 된 순간에 바로 반영되기 때문에 따로 변수에 담아 리스트를 재조회하지 않아도 된다.
 
-- `console.group() : 인자이름으로 console 결과를 그룹해줌`
-- `console.groupEnd() : 그룹종료`
+- `console.group() : 인자이름으로 console 결과를 그룹해줌`<br/>`console.groupEnd() : 그룹종료`
