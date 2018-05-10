@@ -60,7 +60,7 @@ console.log(location)
 
 
 ## URL 변경하기
-- 현재 문서를 http://egoing.net으로 이동
+- 현재 문서를 http://egoing.net 으로 이동
 ```
 location.href = 'http://egoing.net';
 
