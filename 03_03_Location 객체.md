@@ -29,6 +29,7 @@ ex) http://opentutorials.org:80/module/1?id=1#bookmark
 console.log(location.protocol);  // http:
 ```
 > 프로토콜 (http, https, file 등)
+- `HTTP : 웹서버와 웹브라우저가 서로 통신하기위한 통신규약`
 ```
 console.log(location.host);  // opentutorials.org
 ```
