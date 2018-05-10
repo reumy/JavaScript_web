@@ -65,19 +65,19 @@ HTML'Input'Element
 
 - DOM의 스펙
   - [HTMLElement](https://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html#ID-74680021)
-  - [HTMLAnchroElement](https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-48250443)
+  - [HTMLAnchorElement](https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-48250443)
   - [HTMLInputElement](https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-6043025)
 
 - HTMLElement
 ```
-interface HTMLLIElement : __HTMLElement__ {
+interface HTMLLIElement : HTMLElement {
   attribute DOMString       type;
   attribute long            value;
 };
 ```
-- HTMLAnchroElement
+- HTMLAnchorElement
 ```
-interface HTMLAnchorElement : __HTMLElement__ {
+interface HTMLAnchorElement : HTMLElement {
     attribute DOMString       accessKey;
     attribute DOMString       charset;
     attribute DOMString       coords;
@@ -94,7 +94,7 @@ interface HTMLAnchorElement : __HTMLElement__ {
   void               focus();
 };
 ```
-> 공통적인 태그(HTMLElement)의 성격을 가졌지만 각각의 기능이 세세하게 다르기 때문에 객체가 다르다.
+- HTMLLIElement, HTMLAnchorElement, HTMLInputElement는 HTMLElement를 부모로 가지고있음<br/>즉, 공통적인 태그(HTMLElement)의 성격을 가졌지만 각각의 기능이 세세하게 다르기 때문에 각각 부가적인 기능을 가짐
 
 
 ## DOM Tree
