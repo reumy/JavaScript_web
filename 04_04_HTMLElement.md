@@ -26,8 +26,9 @@
 HTMLLIElement 
 HTMLCollection
 ```
-> 즉, 실행결과가 '하나'인 경우 HTMLLIELement, '복수'인 경우 HTMLCollection(유사배열)을 리턴
+> 객체의 이름을 조회함
 
+- HTML\*ELement : 조회한 객체가 '하나'인 경우 ( \* : 각 엘리먼트에 해당되는 객체)<br/>HTMLCollection : '복수'인 경우 유사배열을 리턴
 - `constructor : 객체의 Element 종류 조회`
 
 ## HTMLElement
