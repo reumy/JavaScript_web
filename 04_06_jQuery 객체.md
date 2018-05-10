@@ -159,8 +159,6 @@ $('li')
 - [참고](https://api.jquery.com/map/)
 
 
-## jQuery 객체 API
+## [jQuery 객체 API](https://api.jquery.com/)
 - 제어할 대상을 선택한 후에는 대상에 대한 연산을 해야함
-- .css와 .attr은 jQuery 객체가 가지고있는 메소드인데, jQuery는 그 외에도 많은 API를 제공하고 있음
-- [jQuery API](https://api.jquery.com/)
 - 모든 API를 익힐수는 없고, 중요하고 반복적을 사용되는 API를 보면서 사용법을 익혀야함
