@@ -14,7 +14,7 @@
 
 - HTMLElement는 모든 Element에 대한 공통적인 기능을 제공한다.<br/>즉, HTMLElement의 부모는 ELement이다.<br/>HTMLElement이 가진 대표적인 특성은 style 프로퍼티가 있다.
 
-- 왜 굳이 HTMLElement와 ELement를 나눌까?<br/>DOM이 꼭 HTML 만을 제어하기 위한 언어는 아니기 때문이다.<br/>HTML이나 XML, SVG, XUL과 같이 마크업 형태의 언어를 제어하기위한 표준이기때문에 그 각각의 언어들은 각각의 Element를 갖는다.<br/>그리고 각각의 구체적인 언어(HTML,XML,SVG)를 위한 기능은 HTMLElement, SVGElement, XULElement와 같은 객체를 통해서 추가해서 사용하고 있다.<br/>즉, style 프로퍼티 같은 경우에 Element 객체에는 없고 HTMLElement의 객체만의 프로퍼티로 존재한다.<br/>이를통해 알수 있는점은 다른 언어가 DOM을 지원하고 있다면 수월하게 익힐 수 있다는 것이다.
+- 왜 굳이 HTMLElement와 ELement를 나눌까?<br/>DOM이 꼭 HTML 만을 제어하기 위한 언어는 아니기 때문이다.<br/>HTML이나 XML, SVG, XUL과 같이 마크업 형태의 언어를 제어하기위한 표준이기때문에 그 각각의 언어들은 각각의 Element를 갖는다.<br/>그리고 각각의 구체적인 언어(HTML,XML,SVG)를 위한 기능은 HTMLElement, SVGElement, XULElement와 같은 객체를 통해서 추가해서 사용하기 위해 두개를 분리하는 것이다.<br/>즉, style 프로퍼티 같은 경우에 Element 객체에는 없고 HTMLElement의 객체만의 프로퍼티로 존재한다.<br/>이를통해 알수 있는점은 다른 언어가 DOM을 지원하고 있다면 수월하게 익힐 수 있다는 것이다.
 
 - `마크업 : 열리고 닫히는 형태의 언어 ( ex. <html></html> )`
 
