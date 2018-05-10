@@ -32,13 +32,26 @@ console.dir(navigator.appName);
 ```
 console.dir(navigator.appVersion);
 ```
+- 결과
+```
+"5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36"
+```
 
 ### userAgent
 - 브라우저가 서버측으로 전송하는 User Agent HTTP 헤더의 내용
+- 웹브라우저의 다른 표현
 - appVersion과 비슷
 ```
 console.dir(navigator.userAgent);
 ```
+- 결과
+```
+"5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36"
+```
+> appVersion와 출력값이 같음
+
+- 웹브라우저가 웹서버에게 요청할때 웹브라우저 정보(userAgent)를 제공하면서 요청함
+
 
 ### platform
 - 브라우저가 동작하고 있는 운영체제에 대한 정보
