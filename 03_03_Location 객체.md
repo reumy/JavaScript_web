@@ -35,11 +35,11 @@ console.log(location.protocol);  // http:
 ```
 console.log(location.host);  // opentutorials.org
 ```
-> 식별하는 주소
+> 서비스를 식별하는 주소
 ```
 console.log(location.port);  // :80
 ```
-> 포트번호 (= 서버 소프트웨어 식별)<br/>기본포트(80, 8080)일땐 undefined
+> 포트번호 (= 서버 소프트웨어 식별)<br/>기본포트(80, 8080)일땐 생략됨(undefined)
 ```
 console.log(location.pathname);  // module/1
 ```
@@ -47,7 +47,7 @@ console.log(location.pathname);  // module/1
 ```
 console.log(location.search);  // ?id=1
 ```
-> 사이트 즉, 애플리케이션에게 전달한 값
+> 사이트 즉, 애플리케이션에게 전달한 값 (?~)
 ```
 console.log(location.hash);  // #bookmark
 ```
