@@ -55,7 +55,7 @@ li.css('text-decoration', 'underline').css('color','blue');
 ## 엘리먼트 정보조회
 - jQuery 객체에는 조회된 엘리먼트가 담겨있음
 - jQuery 객체는 유사배열 형태로 조회된 엘리먼트를 가지고 있어서 배열처럼 사용해 엘리먼트를 가져올 수 있음
-  - 즉, $("li")[index]로 특정 위치의 요소를 가져올 수 있지만, 이렇게 가져온 객체는 jQuery객체가 아니기 때문에 eq()메소드를 사용함
+  - 즉, $('')[index]로 특정 위치의 요소를 가져올 수 있지만, 이렇게 가져온 객체는 jQuery객체가 아니기 때문에 eq()메소드를 사용함
 ```
 <ul>
   <li>html</li>
@@ -65,12 +65,12 @@ li.css('text-decoration', 'underline').css('color','blue');
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
-  console.log($('li').length);
-  console.log($('li')[0]);
+  console.log($('li').length);  // 3
+  console.log($('li')[0]);  // <li>html</li>
   
   var li = $('li');
   for(var i=0; i<li.length; i++){
-    console.log(li[i]);
+    console.log(li[i]);  // [<li>html</li>, <li>css</li>, <li>JavaScript</li>]
   }
 </script>
 ```
@@ -86,14 +86,14 @@ function HTMLLIElement(){[native code]}
 function HTMLLIElement(){[native code]}
 function HTMLLIElement(){[native code]}
 ```
-> 각각의 객체는 DOM객체 즉, HTMLLIElement이므로 jQuery 객체가 아니다.<br/>따라서 jQuery의 기능을 이용해서 이 객체를 제어하려면 jQuery 함수를 이용해야 한다.
+> 각각의 객체는 HTMLLIElement 즉, DOM객체이므로 jQuery 객체가 아니다.<br/>따라서 jQuery의 기능을 이용해서 이 객체를 제어하려면 jQuery 함수를 이용해야 한다.
 ```
 for(var i=0; i<li.length; i++){
   li[i].css('color', 'red');  // 실행X
   $(li[i]).css('color', 'red');  // 실행O
 }
 ```
-> $(li[i]) 가 jQuery 객체를 리턴
+> li[i]인 DOM 객체를 jQuery 함수로 감싸서 $(li[i]) jQuery객체를 만들면 jQeury로 제어가 가능하다.
 
 - ※ 추가설명
 > jQuery를 담은 변수는 jQeury가 아닌 DOM이다. 그러나 jQuery Object가 유사배열을 가지고 있을 경우 그 유사배열의 한 객체가 DOM Object인 것이다.<br/>즉, var li = $('li'); 일때, li는 jQuery object이고 li[0], li[1], li[2] ...는 DOM object 인 것이다.<br/>그래서 li[1]에 jQuery 함수(.css , .attr 과 같은 함수)를 쓰고 싶으면 $()로 감싸주어야 jQuery 함수를 사용가능한 것이다.<br/>그러나 li자체를 사용할때는 jQuery객체이므로 '$'로 감싸줄 필요없이 바로 사용가능하다. `ex) li.attr();`
