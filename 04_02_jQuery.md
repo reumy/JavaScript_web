@@ -20,5 +20,5 @@
 </script>
 ```
 > 인자의 h1태그가 body태그 아래에 추가됨
-- `prepend() : $('선택')한 태그 아래에 인자로 온 태그를 추가시킴`
+- `prepend() : $('선택')한 태그 바로 아래에 인자의 태그를 추가시킴`
 - jQuery(document).ready(function($){}); == $(document).ready(function(){});
