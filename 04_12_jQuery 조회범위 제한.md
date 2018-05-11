@@ -6,6 +6,10 @@
 ## selector context
 - jQuery에서의 제한된 범위를 말함
 - 조회할 때 조회 범위를 제한하는것이 가장 간편한 방법
+- 첫번째인자에 해당되는 셀렉터를 제어하려고하는 엘리먼트의 선택자
+```
+$( "효과를 주고자하는 element", "selector context")
+```
 ```
 <ul>
   <li class="marked">html</li>
