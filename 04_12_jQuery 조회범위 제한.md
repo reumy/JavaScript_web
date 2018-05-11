@@ -61,4 +61,6 @@ $('#active').css('color','blue').find('.marked').css( "background-color", "red" 
   </ul>
 </li>
 ```
+> active 하위 엘리먼트들도 전부 글씨가 파란색이 됨<br/>이유는 css의 color속성은 상속이 되기때문에 하위 엘리먼트도 적용됨
+
 - 더 많은 예제는 [.find()](https://api.jquery.com/find/) 참고
