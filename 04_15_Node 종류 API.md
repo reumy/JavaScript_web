@@ -7,7 +7,7 @@
 
 ## Node Type
 - 노드의 종류에 따라서 정해진 상수가 존재
-  - 상수 : 정해져있는 값
+  - 상수 : 정해져있는 값
 ```
 for(var name in Node){
   console.log(name, Node[name]);
