@@ -73,8 +73,8 @@
 
 
 ## 교체
-- replaceAll : 제어대상을 인자로 전달함
-- replaceWith : 제어대상을 먼저 지정함
+- replaceAll : 제어대상을 뒤 인자로 전달함 (제어대상이 뒤, 교체대상을 앞에 지정)
+- replaceWith : 제어대상을 먼저 지정함 (제어대상이 앞, 교체대상을 뒤에 지정)
 ```
 <div class="target" id="target1">target 1</div>
 <div class="target" id="target2">target 2</div>
