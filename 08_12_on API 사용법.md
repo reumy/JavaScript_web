@@ -76,14 +76,10 @@ $('#target').on('focus blur', function(e){
 > 한번에 여러개의 이벤트 타입을 선택해 동일한 이벤트 핸들러를 연결
 
 ```
-var handler = function(e){
-  $('#status').html(e.type);
-}
-
 $('#target').on(
   {
-  'focus' : handler, 
-  'blur' : handler
+  'focus' : function(e){}, 
+  'blur' : function(e){}
   }
 )
 ```
