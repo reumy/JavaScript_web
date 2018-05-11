@@ -1,8 +1,8 @@
 ### DOM
 ## 노드 종류 API
 - 현재 선택된 노드가 어떤 타입인지를 판단해야 하는 경우
-- Node.nodeType : node의 타입을 의미 
-- Node.nodeName : node의 이름 (태그명을 의미)
+- Node.nodeType : node의 타입을 의미 ex. element, text ...
+- Node.nodeName : node의 이름 (태그명을 의미) ex. body, ul ...
 
 
 ## Node Type
