@@ -63,7 +63,7 @@ function callAppendChild(){
 
 
 ## 노드 제거
-- [removeChild(child)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) : 삭제대상의 부모 노드객체의 것을 실행해야함
+- [removeChild(child)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) : 삭제대상의 부모 노드객체를 호출해 실행해야함
 ```
 <ul>
   <li>HTML</li>
