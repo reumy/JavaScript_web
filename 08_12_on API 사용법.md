@@ -132,6 +132,6 @@ $('#target').off('focus', handler);
 
 - 모두 제거
 ```
-$('#target').off('focus blur', handler);
+$('#target').off('focus blur');
 ```
 > 이벤트타입이 focus와 blur인 이벤트 모두 제거됨
