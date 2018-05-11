@@ -7,7 +7,7 @@
   - Node.lastChild : 마지막 자식노드
   - Node.nextSibling : 다음 형제 노드
   - Node.previousSibling : 이전 형제 노드
-  - parentNode : 부모 객체 반환
+  - Node.parentNode : 부모 객체 반환
   
 ```
 <body id="start">
@@ -37,7 +37,7 @@
   </script>
 </body>
 ```
-> 줄바꿈과 같은 공백도 text라는 노드로 인식함
+- 줄바꿈과 같은 공백도 text라는 노드로 인식함
 ```
 for(var i = 0; i<start.childNodes.length;i++){
   start.childNodes[i].style.color = 'red';
