@@ -51,6 +51,7 @@
   console.log(t2.prop('checked'));  // true
 </script>
 ```
+>  checked 가 되어 있는 상태일때의 출력형태
 
 - jQuery를 이용하면 프로퍼티의 이름으로 html 속성의 이름과 다른 이름을 사용해도 올바른 것으로 교정해줌
 - 이러한 점이 라이브러리를 사용하는 의의
