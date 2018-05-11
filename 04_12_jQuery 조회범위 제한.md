@@ -50,6 +50,7 @@ $( "#active").find('.marked').css( "background-color", "red" );
 ```
 $('#active').css('color','blue').find('.marked').css( "background-color", "red" );
 ```
+> 체인
 - 결과
 ```
 <li id="active" style="color: blue;">JavaScript
