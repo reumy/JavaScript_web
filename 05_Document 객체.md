@@ -25,7 +25,7 @@ console.log(window.document.childNodes[1]);
   <body></body>
 </html>
 ```
-> document 객체의 자식으로는 Doctype과 html이 있다.
+> document 객체의 자식으로는 Doctype과 html이 있다. 즉, 문서전체다.
 
 
 ## 주요 API
