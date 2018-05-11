@@ -124,4 +124,4 @@ function callAppendChild(){
   </li>
 </ul>
 ```
-> (1) 엘리먼트를 생성<br/>(2) 속성부여<br/>(3) 내용추가<br/>(4) a객체를 target의 firstChild에 변경
+> (1) 엘리먼트를 생성<br/>(2) 속성부여<br/>(3) 하위 엘리먼트에 내용추가<br/>(4) a객체를 target의 firstChild에 변경
