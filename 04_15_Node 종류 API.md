@@ -7,6 +7,7 @@
 
 ## Node Type
 - 노드의 종류에 따라서 정해진 상수가 존재
+  - 상수 : 정해져있는 값
 ```
 for(var name in Node){
   console.log(name, Node[name]);
@@ -33,7 +34,7 @@ DOCUMENT_POSITION_CONTAINS 8
 DOCUMENT_POSITION_CONTAINED_BY 16 
 DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC 32
 ```
-> 모든 노드의 종류와 종류에 따른 값을 출력
+> 모든 노드의 종류와 종류에 따른 값을 출력 (상수)
 
 ```
 <body id="start">
