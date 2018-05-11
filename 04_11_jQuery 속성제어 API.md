@@ -24,8 +24,6 @@
 ```
 > $('#target')는 jQuery객체를 리턴하므로, '$'로 감싸지않고 바로 jQuery함수 사용이 가능
 
-> var ex = $('~'); 에서 a는 jQuery객체를 리턴(유사배열)한다. 리턴한 객체의 요소 즉, ex[0] 와 같은 것들이 DOM 객체가 된다.
-
 
 ## attribute 와 property
 - DOM과 마찬가지로 jQuery도 속성과 프로퍼티를 구분함
