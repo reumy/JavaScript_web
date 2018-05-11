@@ -3,10 +3,10 @@
 - jQuery에서 노드를 제어하는 기능은 주로 [Manipulation](http://api.jquery.com/category/manipulation/) 카테고리에 속함
 
 ## 추가
-- before : 해당 태그 위에 위치
-- after : 해당 태그 아래에 위치
-- prepend : 해당 태그 안쪽 내용 위에 위치
-- append : 해당 태그 안쪽 내용 아래에 위치
+- before : 해당 태그 위에 위치 (위 형제)
+- after : 해당 태그 아래에 위치 (아래 형제)
+- prepend : 해당 태그 안쪽 내용 위에 위치 (content 위, 위 자식)
+- append : 해당 태그 안쪽 내용 아래에 위치 (content 아래, 아래 자식)
 
 ![주요 메소드](images/jsw10.png)
 
