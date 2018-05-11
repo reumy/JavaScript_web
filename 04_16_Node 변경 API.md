@@ -22,7 +22,7 @@
 function callAppendChild(){
   var target = document.getElementById('target');
   var li = document.createElement('li');  // (1)
-  var text = document.createTextNode('JavaScript2');  // (2)
+  var text = document.createTextNode('JavaScript');  // (2)
   li.appendChild(text);  // (3)
   target.appendChild(li);  // (4)
 }
@@ -33,7 +33,6 @@ function callAppendChild(){
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
-  <li>JavaScript2</li>
 </ul>
 ```
 > (1) 변수 li에 li 태그객체를 생성함. 내용은 비어있음<br/>어떤 특정 태그가 생성하는 것이 아닌 문서(document)가 생성하므로 document.createElement()인 것<br/>(2) 변수 text에 JavaScript2 텍스트(내용)를 생성<br/>(3) 인자의 내용이 생성된 li 태그 안쪽에 들어감<br/>(4) id가 target인 ul 태그의 마지막에 추가됨
@@ -58,10 +57,9 @@ function callAppendChild(){
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
-  <li>JavaScript2</li>
 </ul>
 ```
-> 변수 li를 맨 앞으로 위치시킴 즉, target의 firstChild 앞에 위치시킴
+> 변수 li를 맨 앞으로 위치시킴 즉, target.firstChild (두번째인자) 앞에 li (첫번재인자) 를 위치시킴
 
 
 ## 노드 제거
