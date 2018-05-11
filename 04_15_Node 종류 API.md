@@ -109,7 +109,7 @@ traverse(document.getElementById('start'), function(elem){
   console.log(elem);
 });
 ```
-> 여기에서 elem은 현재 조회하고있는 엘리먼트 객체를 담는다.<br/>첫번째 인자는 자기자신(body)을 포함해서 모든 태그들을 탐색한다.
+> 여기에서 elem은 현재 조회하고있는 엘리먼트 객체를 담고,<br/>첫번째 인자는 자기자신(body)을 포함해서 모든 태그들을 탐색한다.
 
 
 ```
@@ -117,7 +117,7 @@ function traverse(target, callback){
   callback(target);
 }
 ```
-> 여기에서 target은 탐색하려고하는 루트 엘리먼트이고,<br/>여기에서 callback은 자기자신을 실행시키기 위한 함수로, 각각의 엘리먼트들을 조회할때마다 해당되는 엘리먼트를 사용자가 작성한 함수의 인자(elem)로 전달할 함수이다.<br/>현재, callback은 function(elem){console.log(elem)}; 와 같다.
+> 여기에서 target은 탐색하려고하는 루트 엘리먼트이고,<br/>여기에서 callback은 자기자신을 실행시키기 위한 함수이고, 각각의 엘리먼트들을 조회할때마다 해당되는 엘리먼트를 사용자가 작성한 함수의 인자(elem)로 전달한다.<br/>현재, callback은 function(elem){console.log(elem)}; 와 같다.
 
 > `callback : 내부적으로 호출되는 방식으로 나중에 호출될것을 의미`
 
@@ -125,7 +125,7 @@ function traverse(target, callback){
 ```
 body#start
 ```
-> callback 매개변수가 실행되면 function(elem){console.log(elem)};이 실행되고,<br/>이때 elem은 target이 되고, 이 target은 document.getElementById('start')가 된다.
+> callback 매개변수가 실행되면 function(elem){console.log(elem)};이 실행되고,<br/>이때 elem은 target이 되고, 이 target은 document.getElementById('start')가 된다.<br/>즉, console.log(document.getElementById('start')) 를 실행한 것의 결과이다.
 
 > 인자로 전달한 즉, 탐색하려고하는 첫번째 엘리먼트를 두번째 인자인 함수의 인자로 전달해 그것을 내부적으로 사용할 수 있도록 했다.
 
@@ -169,7 +169,7 @@ function traverse(target, callback){
   }
 }
 ```
-> 엘리먼트노드가 아닌것들을 배제시켜서 출력
+> 엘리먼트노드가 아닌것들을 배제시켜서 출력 (text노드는 제거됨)
 
 ```
 function traverse(target, callback){
