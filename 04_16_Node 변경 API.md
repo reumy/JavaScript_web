@@ -59,7 +59,7 @@ function callAppendChild(){
   <li>JavaScript</li>
 </ul>
 ```
-> 변수 li를 맨 앞으로 위치시킴 즉, target.firstChild (두번째인자) 앞에 li (첫번재인자) 를 위치시킴
+> 변수 li를 맨 앞으로 위치시킴<br/>즉, 두번째인자인 target.firstChild (=#text) 앞에 첫번째인자인 li 를 위치시킴
 
 
 ## 노드 제거
