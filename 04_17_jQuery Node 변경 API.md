@@ -106,6 +106,7 @@
 ```
 <div class="target" id="target1">target 1</div>  // (1)
 <div class="target" id="target2">target 2</div>  // (2)
+
 <div id="source">source</div>
 
 <input type="button" value="clone replaceAll target 1" id="btn1" />
@@ -125,6 +126,8 @@
 - [결과](http://output.jsbin.com/bisuz/1/)
 ```
 <div id="source">source</div>
+<div id="source">source</div>
+
 <div id="source">source</div>
 ```
 > 결과는 동일<br/>clone 함수가 붙으며, 교체와 같이 제어대상의 위치가 다르다.
