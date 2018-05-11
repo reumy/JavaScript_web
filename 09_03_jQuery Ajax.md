@@ -103,6 +103,7 @@ echo $d1->format($_POST['format']);
 ```
 > data:$('form').serialize()는 form 태그의 정보를 '값의이름=값의내용&값'의 형식으로 바꿔서 서버로 전송한다.<br/>즉, 서버로 전송하는 데이터의 형식을 지키는 코드인 data += ~ 단계가 생략됨<br/>단, serialize 작업시에는 form 태그 안에 있는 태그들은 반드시 name 속성을 가지고 있어야 함
 
+- 디폴드값이 get이므로 get방식을 이용할땐 tpye설정을 하지않아도됨
 
 ## JSON 처리
 - $.ajax를 이용해서 JSON을 처리하는 방법
@@ -139,3 +140,8 @@ echo json_encode($timezones);
 </script>
 ```
 > dataType:'json'은 서버에서 리턴한 값을 json 형식으로 갖고있음을 명시해줌
+
+```
+success:function(data){}
+```
+> 인자로 전달된 data에는 success 함수가 호출될 때 json.parse를 이용해 자바스크립트 객체로 전환된 데이터를 담아줌
