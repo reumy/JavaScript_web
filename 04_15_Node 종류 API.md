@@ -100,7 +100,7 @@ traverse(document.getElementById('start'), function(elem){
   }
 });
 ```
-> 모든 A태그들을 빨간색으로 바꿈
+> 모든 A 태그들만을 파란색으로 바꿈
 
 
 #### 로직 분해 해석
@@ -109,7 +109,7 @@ traverse(document.getElementById('start'), function(elem){
   console.log(elem);
 });
 ```
-> 여기에서 elem은 현재 조회하고있는 엘리먼트를 담는다.
+> 여기에서 elem은 현재 조회하고있는 엘리먼트 객체를 담는다.<br/>첫번째 인자는 자기자신(body)을 포함해서 모든 태그들을 탐색한다.
 
 
 ```
