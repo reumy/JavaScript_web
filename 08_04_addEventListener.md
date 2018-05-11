@@ -43,7 +43,7 @@ if(t.addEventListener){
   });
 </script>
 ```
-> 알림창이 1, 2 두번 실행된다.<br/>동일한 이벤트에 프로퍼티 리스너방식이라면 마지막 이벤트만 실행된다.
+> 알림창이 1, 2 순차적으로 두 번 실행된다.<br/>동일한 이벤트에 프로퍼티 리스너방식이라면 단 하나의 이벤트핸들러만을 설치할 수 있기때문에 마지막 이벤트만 실행된다.
 
 - 이벤트 객체를 이용하면 복수의 엘리먼트에 하나의 리스너를 등록해서 재사용할 수 있음
 ```
@@ -72,8 +72,7 @@ if(t.addEventListener){
 > 클릭한 이벤트 객체의 id가 target1 이면 1을 띄운 알림창을 실행 후 종료<br/>id가 target2 이면 2를 띄운 알림창을 실행 후 종료
 
 - `switch : if문과 비슷한 함수`
-
-- `event.target.id : 어디에서 호출되었는지를 알아냄`<br/>하나의 함수에서 동작할 때는 어디에서 발생한 것인지 확인해야 함
+- `event.target.id : 어디에서 호출되었는지 그리고 그 id를 알아냄`<br/>하나의 함수에서 동작할 때는 어디에서 발생한 것인지 확인해야 함
 
 - 위 예제 t1.addEventListener('click', btn_listener) 에서 두번째 인자에 괄호가 빠진 이유
 > function btn_listener(event){} == var btn_listener = function(event){}로 btn_listener 는 함수객체 자체를 의미한다.<br/>즉, addEventListener는 두번째 인자로 함수객체를 받아야 하는데 btn_listener()를 지정하면 btn_listener라는 함수의 실행결과를 인자로 넘기는 셈이므로 btn_listener를 인자로 지정해야 함수객체를 그대로 넘기게 된다.
