@@ -49,3 +49,4 @@ document.title
 ```
 Document 객체 - 생활코딩
 ```
+> 해당 문서의 title의 값을 출력
