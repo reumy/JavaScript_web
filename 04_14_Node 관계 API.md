@@ -37,7 +37,7 @@
   </script>
 </body>
 ```
-- 줄바꿈과 같은 공백도 text라는 노드로 인식함
+> 줄바꿈과 같은 공백도 text라는 노드로 인식함
 ```
 for(var i = 0; i<start.childNodes.length;i++){
   start.childNodes[i].style.color = 'red';
